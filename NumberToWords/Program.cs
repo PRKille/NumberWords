@@ -7,7 +7,9 @@ namespace Numbers
   {
     public static void Main()
     {
-     Console.WriteLine();
+     Console.WriteLine("Please enter an number using commas to sepparate by hundreds (e.g. 1,234,567)");
+     string userInput = Console.ReadLine();
+     Console.WriteLine(Number.CheckFullNum(userInput));
     }
   }
 
