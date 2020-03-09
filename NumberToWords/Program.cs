@@ -1,16 +1,20 @@
-using System;
-using Numbers.Models;
+using System.IO;
+using Microsoft.AspNetCore.Hosting;
 
 namespace Numbers
 {
   public class Program
   {
-    public static void Main()
+    public static void Main(string[] args)
     {
-     Console.WriteLine("Please enter an number using commas to sepparate by hundreds (e.g. 1,234,567)");
-     string userInput = Console.ReadLine();
-     Console.WriteLine(Number.CheckFullNum(userInput));
+      var host = new WebHostBuilder()
+        .UseKestrel()
+        .UseContentRoot(Directory.GetCurrentDirectory())
+        .UseIISIntegration()
+        .UseStartup<Startup>()
+        .Build();
+
+      host.Run();
     }
   }
-
 }

@@ -5,6 +5,7 @@ namespace Numbers.Models
 {
   public class Number
   {
+    public string EndWord {get;set;}
     public static Dictionary<string, string> onesPlace {get;set;}= new Dictionary<string, string>()
     {
       {"0", ""},
