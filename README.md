@@ -30,8 +30,8 @@ Converts numerals to words
 ### # Clone this repository
 1. Clone this project.
     * `$ cd desktop`
-    * `$ git clone https://github.com/jieunkang-101/Bakery`
-    * `$ cd Bakery`
+    * `$ git clone https://github.com/PRKille/NumberWords`
+    * `$ cd NumberWords`
 2. Run this console application
     * `$ dotnet run` 
 
